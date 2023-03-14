@@ -2,6 +2,13 @@
 
     padding: var(--social-padding);
     margin-bottom: 120px;
+    @media (max-width: $mobile) {
+        margin-bottom: 80px;
+
+
+
+        }
+    
     // .social__cards
 
     &__cards {

@@ -36,6 +36,8 @@
 
     &__img {
         width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
 
     // .slider__button
@@ -53,9 +55,9 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        
+
         &:hover {
-            border-color:var(--color-background-accent);
+            border-color: var(--color-background-accent);
         }
 
         &:active {

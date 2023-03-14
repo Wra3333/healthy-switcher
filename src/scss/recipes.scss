@@ -12,7 +12,7 @@
     &__title {
         margin-bottom: 92px;
         @media (max-width: $mobile) {
-         margin-bottom: 60px;
+         margin-bottom: 50px;
         }
     }
     
@@ -35,6 +35,10 @@
         box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
         border-radius: 6px;
         grid-column-end: span 6;
+        @media (max-width: $mobile) {
+        padding: 20px;
+
+        }
 
         // .recipes__card_big
     
@@ -43,6 +47,10 @@
             padding: 60px 60px 60px 60px;
             grid-row-end: span 3;
             text-align: center;
+            @media (max-width: $mobile) {
+                padding: 30px;
+        
+                }
         }
     }
 
@@ -54,6 +62,11 @@
         &_big {
             margin-bottom: 45px;
             font-size: 21px;
+            @media (max-width: $mobile) {
+                margin-bottom: 25px;
+
+        
+                }
         }
     }
 
@@ -89,6 +102,11 @@
         &_big {
             margin-bottom: 65px;
             display: inline-block;
+            @media (max-width: $mobile) {
+                margin-bottom: 25px;
+
+        
+                }
         }
     }
 
@@ -97,6 +115,11 @@
     .recipe__chef{
         font: var(--card-font);
         margin-bottom: 65px;
+        @media (max-width: $mobile) {
+            margin-bottom: 25px;
+
+    
+            }
     }
 
     // .recipes__data
