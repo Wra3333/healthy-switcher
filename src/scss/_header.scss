@@ -18,16 +18,15 @@
 
         @media (max-width: $mobileSmall) {
             gap: 20px 20px;
-
         }
     }
 
     // .header__logo
 
     &__logo {
-        @media (max-width: $mobileSmall) {
+        @media (max-width: $mobile) {
             font-size: 1rem;
-            max-width: 222px;
+            max-width: 202px;
         }
     }
 

@@ -18,7 +18,10 @@
     &__cards {
         display: grid;
         gap: var(--gap);
-        grid-template-columns: repeat(auto-fit, minmax(25px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(45px, 1fr));
+        @media (max-width: $mobileSmall) {
+            grid-template-columns: repeat(auto-fit, minmax(25px, 1fr));   
+        }
     }
     
     // .recipes__card
