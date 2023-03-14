@@ -1,9 +1,15 @@
 .intro {
-    
+
     background: no-repeat url("../img/banner/banner.png") 50% / cover;
     padding-top: 170px;
     padding-bottom: 400px;
-    
+
+    @media (max-width: $mobile) {
+        padding-top: 140px;
+        padding-bottom: 250px;
+
+    }
+
     // .intro__container
     &__container {}
 
@@ -29,6 +35,11 @@
         text-align: center;
         max-width: 610px;
         margin: auto auto 40px auto;
+
+        @media (max-width: $mobile) {
+            margin: auto auto 20px auto;
+
+        }
     }
 
     // .intro__button
@@ -37,7 +48,7 @@
         --text-button-size:#{rem(18)};
         --text-button--font:
             var(--text-button-weight) var(--text-button-size) / var(--text-button-height) var(--font-family-second);
-        
+
         font: var(--text-button--font);
         color: var(--color-font-initial);
         background-color: var(--color-background-accent);
@@ -50,11 +61,12 @@
         &:hover {
             color: var(--color-font-secondary-light);
             background-color: var(--color-background-secondary);
-            border-color:#303030;
+            border-color: #303030;
+        }
+
+        @media (max-width: $mobile) {
+            margin: auto auto 40px auto;
+
         }
     }
-}
-
-.wrapper__intro {
-    margin-bottom: var(--intro-margin);
 }

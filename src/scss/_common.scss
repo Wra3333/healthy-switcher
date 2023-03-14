@@ -60,7 +60,7 @@
     min-width: 100px;
     min-height: 40px;
     letter-spacing: 0.2em;
-    transition: color, background-color, transform .3s;
+    transition: color .3s, background-color .3s, transform .3s;
     padding: 10px;
     white-space: nowrap;
     &:hover {

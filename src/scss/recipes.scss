@@ -11,6 +11,9 @@
 
     &__title {
         margin-bottom: 92px;
+        @media (max-width: $mobile) {
+         margin-bottom: 60px;
+        }
     }
     
     // .recipes__cards

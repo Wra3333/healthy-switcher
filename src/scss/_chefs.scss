@@ -21,6 +21,10 @@
             height: 2px;
             background-color: #34C759;
         }
+        @media (max-width: $mobile) {
+            margin-bottom: 60px;
+
+        }
     }
 
     // .chefs__cards
