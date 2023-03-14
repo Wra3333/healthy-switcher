@@ -1,0 +1,35 @@
+.about {
+    box-shadow: 0px 2px 5px #0000001a;
+    margin-top: -200px;
+    border-radius: 6px;
+
+    // .about__container
+    &__container {
+        position: relative;
+    }
+    
+    //about__body
+    &__body{
+        background: var(--color-background-secondary);
+        padding: var(--about-padding);
+    }
+    // .about__body-container
+    
+    &__body-container{
+        max-width: 765px;
+        margin: 0 auto;
+    }
+    // .about__title
+    &__title {
+        margin-bottom: 61px;
+    }
+
+    // .about__text
+
+    &__text {
+        text-align: center;
+        margin-bottom: 90px;
+    }
+
+}
+

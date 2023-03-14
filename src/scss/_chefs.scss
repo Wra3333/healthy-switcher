@@ -1,0 +1,102 @@
+.chefs {
+
+    padding: var(--chefs-padding);
+    margin-bottom: 30px;
+    // .chefs__container
+
+    &__container {}
+
+    // .chefs__title
+
+    &__title {
+        margin-bottom: 68px;
+
+        .title::after {
+            content: "";
+            position: absolute;
+            left: 50%;
+            bottom: -28px;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 2px;
+            background-color: #34C759;
+        }
+    }
+
+    // .chefs__cards
+
+    &__cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(198px, 1fr));
+        gap: var(--gap);
+        justify-items: center;
+        @media (max-width: 611.98px) {
+            grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+        }
+    }
+
+    // .chefs__card
+
+    &__card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 250px;
+    }
+
+
+    // .chefs__header
+
+    &__header {
+        flex-grow: 1;
+        display: flex;
+        margin-bottom: 20px;
+    }
+
+    // .chefs__avatar
+
+    &__avatar {
+        margin-right: 24px;
+    }
+
+    // .chefs__picture
+
+    &__picture {
+        object-fit: cover;
+        max-width: 50px;
+    }
+
+    // .chefs__desc
+
+    &__desc {
+        
+    }
+
+    // .chefs__subtitle
+
+    &__subtitle {
+        font: var(--h4-font);
+        margin-bottom: 6px;
+    }
+
+    // .chefs__text
+
+    &__text {
+        color: var(--color-font-secondary-light);
+        font: var(--text-small-font);
+    }
+
+    // .chefs__footer
+
+    &__footer {}
+    
+    // .chefs__work-img
+
+    &__work-img {
+        width: 100%;
+        max-width: 250px;
+        object-fit: cover;
+        border-radius: 2px;
+    }
+
+}
