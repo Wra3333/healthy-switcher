@@ -33,7 +33,7 @@
     // .header__svg
 
     &__svg {
-        @media (max-width: $mobileSmall) {
+        @media (max-width: $mobile) {
             align-self: center;
         }
     }
