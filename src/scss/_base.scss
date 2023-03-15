@@ -1,5 +1,8 @@
-.scroll-hidden {
-    overflow: hidden
+@media (max-width: $mobile) {
+    .lock {
+        overflow: hidden;
+
+    }
 }
 
 .visually-hidden {

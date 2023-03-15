@@ -1,5 +1,6 @@
 AOS.init({
     duration: 1500,
+    disabled: "mobile"
 });
 
 (function slider(){
@@ -116,18 +117,33 @@ AOS.init({
 
     }
 })()
-
 function burgerMenu(){
+   
+
    let burgerBtn = document.querySelector(".burger"),
-        menu = document.querySelector(".header__nav");
-
+        menu = document.querySelector(".header__nav"),
+        flag = true;
     burgerBtn.addEventListener("click", toggleMenu)
-
 
 
     function toggleMenu(){
         burgerBtn.classList.toggle("burger_active")
         menu.classList.toggle("header__nav_active")
+        document.body.classList.toggle("lock")
+        lock()
+        flag = !flag
+    }
+    function lock(){
+        let elem = document.createElement("div")
+        elem.style.cssText = "width: 20px;  height:20px; overflow:scroll;"
+        document.body.append(elem)
+        let scrollBar = elem.offsetWidth - elem.clientWidth;
+        elem.remove()
+
+        document.body.style.paddingRight = flag?scrollBar +"px":"";
+        document.querySelectorAll(".lock-padding").forEach(
+          item => item.style.paddingRight = flag?scrollBar +"px":""
+        )
     }
 }
 burgerMenu()
