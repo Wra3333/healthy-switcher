@@ -1,3 +1,7 @@
+AOS.init({
+    duration: 1500,
+});
+
 (function slider(){
     let sliderLine = document.querySelector(".slider__line"),
     sliderItem = [...document.querySelectorAll(".slider__item")],

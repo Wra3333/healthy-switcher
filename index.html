@@ -2,6 +2,8 @@
 <html lang="ru">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 <link rel="stylesheet" href="./src/css/style.css">
 <title>Healthy</title>
@@ -11,7 +13,7 @@
     <div class="wrapper">
         <header class="header">
             <div class="header__container">
-                <div class="logo header__logo">
+                <div class="logo header__logo" data-aos="fade-right">
                     <svg class="header__svg" width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g clip-path="url(#clip0_2_350)">
                     <path d="M17.0984 8.16492H7.90162C3.53781 8.16492 0 11.7087 0 16.0817C0 20.4547 3.53781 24 7.90162 24H17.0984C21.4622 24 25 20.4547 25 16.0817C25 11.7087 21.4622 8.16492 17.0984 8.16492ZM16.9261 23.0921C13.0637 23.0921 9.93201 19.9537 9.93201 16.0832C9.93201 12.2127 13.0637 9.07436 16.9261 9.07436C20.7885 9.07436 23.9202 12.2127 23.9202 16.0832C23.9202 19.9537 20.7885 23.0921 16.9261 23.0921Z" fill="#34C759"/>
@@ -26,7 +28,7 @@
                     </svg>
                     Healthy Switcher
                     </div>
-                <nav class="header__nav">
+                <nav class="header__nav" data-aos="fade-left">
                     <ul class="header__items">
                         <li class="header__item">Menu</li>
                         <li class="header__item">Recipes</li>
@@ -41,7 +43,7 @@
         </header>
         <main class="main">
             <section class="intro">
-                <div class="intro__container">
+                <div class="intro__container" data-aos="fade-up" >
                     <h1 class="intro__title">Your <span class="intro__title_family">favourite food</span>
                         delivered <span class="intro__title_family">hot & fresh</span>
                     </h1>
@@ -84,7 +86,7 @@
                     </div>
                 </div>
             </section>
-            <section class="about">
+            <section class="about" data-aos="flip-left">
                 <div class="about__container">
                     <div class="about__body">
                         <div class="about__body-container">
@@ -161,25 +163,25 @@
                         <span class="title__decoration">works</span>
                     </div>
                     <div class="works__items">
-                        <div class="works__item">
+                        <div class="works__item" data-aos="zoom-out-right">
                             <p class="works__subtitle">Pick meals
                             </p>
                             <p class="works__text text">Choose your meals from our diverse weekly menu. Find gluten
                                 or dairy free, low carb & veggie options.</p>
                         </div>
-                        <div class="works__item">
+                        <div class="works__item" data-aos="zoom-out-right">
                             <p class="works__subtitle">Choose how often
                             </p>
                             <p class="works__text text">Our team of chefs do the prep work - no more chopping,
                                 measuring, or sink full of dishes!</p>
                         </div>
-                        <div class="works__item">
+                        <div class="works__item" data-aos="zoom-out-left">
                             <p class="works__subtitle">fast deliveries
                             </p>
                             <p class="works__text text">Your freshly prepped 15-min dinner kits arrive on your
                                 doorstep in a refrigerated box.</p>
                         </div>
-                        <div class="works__item">
+                        <div class="works__item" data-aos="zoom-out-left">
                             <p class="works__subtitle">tasty meals
                             </p>
                             <p class="works__text text">Gobble makes cooking fast, so you have more time to unwind
@@ -196,7 +198,7 @@
                         <span class="title__decoration">DISHES</span>
                     </h2>
                     <div class="cards__items">
-                        <div class="cards__item">
+                        <div class="cards__item" data-aos="flip-left" data-aos-delay="00">
                             <img src="src/img/card/image(5).jpg" alt="суп" class="cards__img">
                             <div class="cards__info">
                                 <p class="cards__subtitle ">Featured Meal</p>
@@ -205,7 +207,7 @@
                                     whopper patty, Add Tender crisp patty and more...</p>
                             </div>
                         </div>
-                        <div class="cards__item">
+                        <div class="cards__item" data-aos="flip-left" data-aos-deklay="200">
                             <img src="src/img/card/image(4).jpg" alt="cалат" class="cards__img">
                             <div class="cards__info">
                                 <p class="cards__subtitle ">Featured Meal </p>
@@ -214,7 +216,7 @@
                                     whopper patty, Add Tender crisp patty and more...</p>
                             </div>
                         </div>
-                        <div class="cards__item">
+                        <div class="cards__item" data-aos="flip-left" data-aos-delay="100">
                             <img src="src/img/card/image.jpg" alt="cалат" class="cards__img">
                             <div class="cards__info">
                                 <p class="cards__subtitle ">Featured Meal </p>
@@ -223,7 +225,7 @@
                                     whopper patty, Add Tender crisp patty and more...</p>
                             </div>
                         </div>
-                        <div class="cards__item">
+                        <div class="cards__item" data-aos="flip-left" data-aos-delay="200">
                             <img src="src/img/card/image(3).jpg" alt="cалат" class="cards__img">
                             <div class="cards__info">
                                 <p class="cards__subtitle ">Featured Meal </p>
@@ -232,7 +234,7 @@
                                     whopper patty, Add Tender crisp patty and more...</p>
                             </div>
                         </div>
-                        <div class="cards__item">
+                        <div class="cards__item" data-aos="flip-left" data-aos-delay="300">
                             <img src="src/img/card/image(2).jpg" alt="cалат" class="cards__img">
                             <div class="cards__info">
                                 <p class="cards__subtitle ">Featured Meal </p>
@@ -241,7 +243,7 @@
                                     whopper patty, Add Tender crisp patty and more...</p>
                             </div>
                         </div>
-                        <div class="cards__item">
+                        <div class="cards__item" data-aos="flip-left" data-aos-delay="400">
                             <img src="src/img/card/image(1).jpg" alt="cалат" class="cards__img">
                             <div class="cards__info">
                                 <p class="cards__subtitle ">Featured Meal </p>
@@ -254,7 +256,7 @@
 
                 </div>
             </section>
-            <section class="chefs">
+            <section class="chefs" data-aos="fade-up">
                 <div class="chefs__container">
                     <h2 class="chefs__title title">
                         <span class="title__main">This month's chefs</span>
@@ -314,7 +316,7 @@
                         <span class="title__decoration">recipes</span>
                     </h2>
                     <div class="recipes__cards">
-                        <div class="recipes__card recipes__card_big">
+                        <div class="recipes__card recipes__card_big" data-aos="fade-right">
                             <div class="recipes__type recipes__type_big">breakfast</div>
                             <div class="recipes__data recipes__data_big">07 Jan 2016</div>
                             <p class="recipes__text recipes__text_big">
@@ -356,7 +358,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="recipes__card">
+                        <div class="recipes__card" data-aos="fade-left">
                             <p class="recipes__text">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                                 incididunt ut
@@ -401,7 +403,7 @@
                             </div>
 
                         </div>
-                        <div class="recipes__card">
+                        <div class="recipes__card" data-aos="fade-left">
                             <p class="recipes__text">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                                 incididunt ut
@@ -445,7 +447,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="recipes__card">
+                        <div class="recipes__card" data-aos="fade-left">
                             <p class="recipes__text">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                                 incididunt ut
