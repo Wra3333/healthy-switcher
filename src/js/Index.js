@@ -121,12 +121,13 @@ function burgerMenu(){
    
 
    let burgerBtn = document.querySelector(".burger"),
+        time = 9000,
         menu = document.querySelector(".header__nav"),
         flag = true;
     burgerBtn.addEventListener("click", toggleMenu)
 
 
-    function toggleMenu(){
+    function toggleMenu({target}){
         burgerBtn.classList.toggle("burger_active")
         menu.classList.toggle("header__nav_active")
         document.body.classList.toggle("lock")
