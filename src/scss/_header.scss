@@ -12,6 +12,7 @@
         padding: 20px 0px;
 
     }
+
     // .header__container
 
     &__container {
@@ -52,6 +53,26 @@
         @media (max-width: $mobile) {
             display: none;
         }
+
+        &.header__nav_active {
+            display: block;
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background: #000000e6;
+            z-index: 1;
+            padding: 100px;
+        }
+
+        &::after {
+            position: fixed;
+            width: 100%;
+            height: 91px;
+            z-index: 1;
+        }
+
     }
 
     // .header__items
@@ -61,6 +82,17 @@
         flex-wrap: wrap;
         justify-content: flex-end;
         gap: 20px 45px;
+
+        &.header__nav_active {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-end;
+            gap: 20px 45px;
+            font-size: 51px;
+            text-align: center;
+            margin: 47px;
+            flex-direction: column;
+        }
     }
 
     // .header__item

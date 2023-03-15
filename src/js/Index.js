@@ -116,3 +116,18 @@ AOS.init({
 
     }
 })()
+
+function burgerMenu(){
+   let burgerBtn = document.querySelector(".burger"),
+        menu = document.querySelector(".header__nav");
+
+    burgerBtn.addEventListener("click", toggleMenu)
+
+
+
+    function toggleMenu(){
+        burgerBtn.classList.toggle("burger_active")
+        menu.classList.toggle("header__nav_active")
+    }
+}
+burgerMenu()
