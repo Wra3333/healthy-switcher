@@ -2,13 +2,11 @@
 
     padding: var(--social-padding);
     margin-bottom: 120px;
+
     @media (max-width: $mobile) {
         margin-bottom: 80px;
+    }
 
-
-
-        }
-    
     // .social__cards
 
     &__cards {
@@ -25,7 +23,7 @@
         padding: 20px 25px 30px 25px;
         box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
         border-radius: 6px;
-        max-width: 350px;   
+        max-width: 350px;
     }
 
     // .social__header
@@ -55,10 +53,10 @@
     // .social__body
 
     &__body {
-        
+
 
         // .social__body_grid
-        &_grid{
+        &_grid {
             max-width: 100%;
             display: grid;
             grid-template-columns: repeat(3, 1fr);
@@ -66,8 +64,8 @@
     }
 
     // .social__img-int
-    
-    &__int{
+
+    &__int {
         width: 100%;
         object-fit: cover;
 
@@ -75,11 +73,11 @@
 
     // .social__img
 
-    &__img{
+    &__img {
         width: 100%;
         object-fit: cover;
     }
-    
+
 
     // .social__data
 

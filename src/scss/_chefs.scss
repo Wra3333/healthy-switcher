@@ -21,6 +21,7 @@
             height: 2px;
             background-color: #34C759;
         }
+
         @media (max-width: $mobile) {
             margin-bottom: 60px;
 
@@ -34,6 +35,7 @@
         grid-template-columns: repeat(auto-fit, minmax(198px, 1fr));
         gap: var(--gap);
         justify-items: center;
+
         @media (max-width: 611.98px) {
             grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
         }
@@ -72,9 +74,7 @@
 
     // .chefs__desc
 
-    &__desc {
-        
-    }
+    &__desc {}
 
     // .chefs__subtitle
 
@@ -93,7 +93,7 @@
     // .chefs__footer
 
     &__footer {}
-    
+
     // .chefs__work-img
 
     &__work-img {

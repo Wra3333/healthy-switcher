@@ -1,27 +1,30 @@
 .about {
     margin-top: -200px;
-    
+
     // .about__container
     &__container {
         position: relative;
     }
-    
+
     //about__body
-    &__body{
+    &__body {
         background: var(--color-background-secondary);
         padding: var(--about-padding);
         box-shadow: 0px 2px 5px #0000001a;
         border-radius: 6px;
     }
+
     // .about__body-container
-    
-    &__body-container{
+
+    &__body-container {
         max-width: 765px;
         margin: auto auto 10px auto
     }
+
     // .about__title
     &__title {
         margin-bottom: 61px;
+
         @media (max-width: $mobile) {
             margin-bottom: 40px;
         }
@@ -32,10 +35,10 @@
     &__text {
         text-align: center;
         margin-bottom: 90px;
+
         @media (max-width: $mobile) {
             margin-bottom: 40px;
         }
     }
 
 }
-

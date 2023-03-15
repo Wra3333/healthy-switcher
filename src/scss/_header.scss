@@ -1,8 +1,4 @@
 .header {
-
-    //style
-
-
     padding: 33px 0px;
     border-bottom: #fff7 solid 1px;
     position: absolute;
@@ -51,7 +47,7 @@
     &__nav {
         font: var(--text-a-font);
         color: var(--color-font-default);
-        transition: top .9s, visibility .9s, opacity .9s ;
+        transition: top .9s, visibility .9s, opacity .9s;
 
 
         @media (max-width: $mobile) {
@@ -69,6 +65,7 @@
             background: #0c0c0c;
 
         }
+
         @media (max-width: $mobileSmall) {
             padding: 100px 15px;
         }
@@ -129,6 +126,7 @@
 
         }
     }
+
     .header__items {
         display: flex;
         flex-wrap: wrap;

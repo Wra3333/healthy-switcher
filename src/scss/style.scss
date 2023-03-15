@@ -1,6 +1,6 @@
 // команда для запуска sass -w ./style.scss ../css/style.css --style compressed
 @use "sass:math";
-@import "_fonts.scss" ;
+@import "_fonts.scss";
 @import "fun.scss";
 
 // base
@@ -11,6 +11,7 @@ $pc: $container-width + $container-padding;
 $tablet: 991.98px;
 $mobile: 767.98px;
 $mobileSmall: 479.98px;
+
 :root {
     // Typography
     --font-family-base: "Helvetica Neue";
@@ -22,7 +23,7 @@ $mobileSmall: 479.98px;
     --h1-line-height: #{line-h(84px,72px)};
 
     // h2
-    --h2-font-size: #{rem(30)} ;
+    --h2-font-size: #{rem(30)};
     --h2-font-weight: 400;
     --h2-line-height: #{line-h(60px,30px)};
 
@@ -48,7 +49,7 @@ $mobileSmall: 479.98px;
 
     //text-small
     --text-small-size: #{rem(12)};
-    --text-small-weight:400;
+    --text-small-weight: 400;
     --text-small-height:#{line-h(16px,12px)};
 
     // Text-button
@@ -58,7 +59,7 @@ $mobileSmall: 479.98px;
 
     // Text-card
     --text-card-size: #{rem(14)};
-    --text-card-weight:400 ;
+    --text-card-weight: 400;
     --text-card-height: #{line-h(30, 14)};
 
     // Text-footer
@@ -88,20 +89,20 @@ $mobileSmall: 479.98px;
     --text-p-font:
         var(--text-p-weight) var(--text-p-size)/ var(--text-p-height) var(--font-family-base);
 
-    --text-button--font:  
+    --text-button--font:
         var(--text-button-weight) var(--text-button-size) / var(--text-button-height) var(--font-family-second);
 
     --text-small-font:
-    var(--text-small-weight) var(--text-small-size) / var(--text-small-height) var(--font-family-base);
+        var(--text-small-weight) var(--text-small-size) / var(--text-small-height) var(--font-family-base);
 
     --subtitle-font:
-        var(--sub-title-weight) var(--sub-title-size)  / var(--sub-title-height) var(--font-family-base);
+        var(--sub-title-weight) var(--sub-title-size) / var(--sub-title-height) var(--font-family-base);
 
-    --card-font:        
-     var(--text-card-weight) var(--text-card-size)/var(--text-card-height) var(--font-family-base);
+    --card-font:
+        var(--text-card-weight) var(--text-card-size)/var(--text-card-height) var(--font-family-base);
 
     --text-footer-font:
-       var(--text-footer-weight) var(--text-footer-size)/var(--text-footer-height)  var(--font-family-base);
+        var(--text-footer-weight) var(--text-footer-size)/var(--text-footer-height) var(--font-family-base);
 
     --text-a-font:
         var(--text-a-weight) var(--text-a-size)/var(--text-a-height) var(--font-family-second);
@@ -110,20 +111,20 @@ $mobileSmall: 479.98px;
     --color-font-initial: #000000;
     --color-font-default: #FFFFFF;
     --color-font-accent: #34C759;
-    --color-font-secondary:#252525;
-    --color-font-secondary-light:#737373;
+    --color-font-secondary: #252525;
+    --color-font-secondary-light: #737373;
     --color-background-initial: #000000;
     --color-background-accent: #34C759;
-    --color-background-secondary:#252525;
-    --color-background-secondary-light:#737373;
+    --color-background-secondary: #252525;
+    --color-background-secondary-light: #737373;
 
     //padding & margins
     --works-margin: 20px;
-    --about-padding:105px 10px 90px 10px;
-    --works-padding:90px 0px 0px 0px;
-    --cards-padding:90px 0px 0px 0px;
-    --chefs-padding:61px 0px 0px 0px;
-    --recipes-padding:98px 0px 0px 0px;
+    --about-padding: 105px 10px 90px 10px;
+    --works-padding: 90px 0px 0px 0px;
+    --cards-padding: 90px 0px 0px 0px;
+    --chefs-padding: 61px 0px 0px 0px;
+    --recipes-padding: 98px 0px 0px 0px;
     --social-padding: 90px 0 0 0;
     --footer-padding: 30px 0;
 
@@ -131,39 +132,37 @@ $mobileSmall: 479.98px;
     --gap: 30px;
 
     //slider
-    --slider-width:734px;
-    --slide-width:50%;
+    --slider-width: 734px;
+    --slide-width: 50%;
 
 
     //media css
     @media (max-width: $tablet) {
-        --slider-width:380px;
-        --slide-width:100%;
-        
-        
+        --slider-width: 380px;
+        --slide-width: 100%;
     }
+
     @media (max-width: $mobile) {
-        --slider-width:340px;
+        --slider-width: 340px;
         --h1-font-size: 2.5rem;
         --h2-font-size: 1.375rem;
         --h3-font-size: 1.5rem;
         --sub-title-size: 1rem;
         --works-margin: 20px;
-        --about-padding:25px 10px 70px 10px;
-        --works-padding:50px 0px 0px 0px;
-        --cards-padding:30px 0px 0px 0px;
-        --chefs-padding:30px 0px 0px 0px;
-        --recipes-padding:30px 0px 0px 0px;
+        --about-padding: 25px 10px 70px 10px;
+        --works-padding: 50px 0px 0px 0px;
+        --cards-padding: 30px 0px 0px 0px;
+        --chefs-padding: 30px 0px 0px 0px;
+        --recipes-padding: 30px 0px 0px 0px;
         --social-padding: 30px 0 0 0;
         --footer-padding: 30px 0;
-    
+
     }
-    
+
     @media (max-width: $mobileSmall) {
-        --slider-width:300px;
-        
+        --slider-width: 300px;
     }
-    
+
 }
 
 // reset

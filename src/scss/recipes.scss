@@ -11,46 +11,49 @@
 
     &__title {
         margin-bottom: 92px;
+
         @media (max-width: $mobile) {
-         margin-bottom: 50px;
+            margin-bottom: 50px;
         }
     }
-    
+
     // .recipes__cards
-    
+
     &__cards {
         display: grid;
         gap: var(--gap);
         grid-template-columns: repeat(auto-fit, minmax(45px, 1fr));
+
         @media (max-width: $mobileSmall) {
-            grid-template-columns: repeat(auto-fit, minmax(25px, 1fr));   
+            grid-template-columns: repeat(auto-fit, minmax(25px, 1fr));
         }
     }
-    
+
     // .recipes__card
-    
+
     &__card {
         padding: 30px;
         background-color: var(--color-background-secondary);
         box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
         border-radius: 6px;
         grid-column-end: span 6;
+
         @media (max-width: $mobile) {
-        padding: 20px;
+            padding: 20px;
 
         }
 
         // .recipes__card_big
-    
+
         &_big {
             background: url("../img/recipes/image.png") no-repeat 50% / cover;
             padding: 60px 60px 60px 60px;
             grid-row-end: span 3;
             text-align: center;
+
             @media (max-width: $mobile) {
                 padding: 30px;
-        
-                }
+            }
         }
     }
 
@@ -59,14 +62,14 @@
     &__text {
         font: var(--text-p-font);
         margin-bottom: 10px;
+
         &_big {
             margin-bottom: 45px;
             font-size: 21px;
+
             @media (max-width: $mobile) {
                 margin-bottom: 25px;
-
-        
-                }
+            }
         }
     }
 
@@ -99,34 +102,35 @@
         text-transform: uppercase;
         padding: 5px 5px;
         border-radius: 6px;
+
         &_big {
             margin-bottom: 65px;
             display: inline-block;
+
             @media (max-width: $mobile) {
                 margin-bottom: 25px;
-
-        
-                }
+            }
         }
     }
 
     // .recipe__chef
 
-    .recipe__chef{
+    .recipe__chef {
         font: var(--card-font);
         margin-bottom: 65px;
+
         @media (max-width: $mobile) {
             margin-bottom: 25px;
 
-    
-            }
+
+        }
     }
 
     // .recipes__data
 
     &__data {
         font: var(--text-small-font);
-        
+
         &_big {
             margin-bottom: 25px;
         }
@@ -161,7 +165,3 @@
     &__comment {}
 
 }
-
-
-
-   
