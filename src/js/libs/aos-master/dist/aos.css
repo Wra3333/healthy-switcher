@@ -1113,14 +1113,15 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
 [data-aos=slide-left] {
     transform: translate3d(100%, 0, 0)
 }
+@media (min-width:611px) {
 
 [data-aos^=flip][data-aos^=flip] {
     backface-visibility: hidden;
-    transition-property: transform
+    transition-property: transform;
 }
-
 [data-aos=flip-left] {
-    transform: perspective(2500px) rotateY(-100deg)
+        transform: perspective(2500px) rotateY(-100deg);
+ }
 }
 
 [data-aos=flip-left].aos-animate {

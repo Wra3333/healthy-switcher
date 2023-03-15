@@ -1,8 +1,6 @@
 .about {
-    box-shadow: 0px 2px 5px #0000001a;
     margin-top: -200px;
-    border-radius: 6px;
-
+    
     // .about__container
     &__container {
         position: relative;
@@ -12,6 +10,8 @@
     &__body{
         background: var(--color-background-secondary);
         padding: var(--about-padding);
+        box-shadow: 0px 2px 5px #0000001a;
+        border-radius: 6px;
     }
     // .about__body-container
     
