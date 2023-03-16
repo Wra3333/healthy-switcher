@@ -55,6 +55,7 @@
             width: 100%;
             height: 100%;
             visibility: hidden;
+            opacity: 0;
             position: fixed;
             left: 0px;
             top: -100%;
@@ -75,8 +76,8 @@
             height: 81px;
             width: 100%;
             opacity: 0;
-            transition: opacity .2s .5s;
-            top: 0px;
+            transition: all .6s;
+            top: -100%;
             left: 0px;
             background: #000;
 
@@ -97,13 +98,59 @@
     // .header__item
 
     &__item {
-        cursor: pointer;
+        
         transition: color .3s;
 
         &:hover {
-            color: var(--color-font-accent);
+            .header__arrow, .header__link{
+                color: var(--color-font-accent);
+                fill: var(--color-background-accent);
+            }
         }
+
     }
+
+    // .header__link
+
+    &__link{
+        cursor: pointer;
+        &:not(:last-child){
+            margin-right: 5px;
+        }
+
+    }
+
+    // .header__arrow
+
+    &__arrow{
+        width: 8px;
+        fill: var(--color-background-default);
+        vertical-align: middle;
+        transform: rotate(90deg);
+    }
+
+	// .header__sub-list
+
+	&__sub-list {
+        background-color: var(--color-background-secondary);
+padding: 25px 15px;
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+gap: 18px 19px;
+box-shadow: 0px 2px 5px #0000001a;
+border-radius: 6px;
+position: absolute;
+left: 627px;
+z-index: 2;
+	}
+
+	// .header__sun-item
+
+	&__sun-item {
+
+	}
+
+
 
     // .header__burger
 
@@ -124,6 +171,7 @@
 
     .header__nav.header__nav_active {
         visibility: visible;
+        opacity: 1;
         top: 0px;
         left: 0px;
 
@@ -132,7 +180,8 @@
             opacity: 1;
             top: 0;
             left: 0;
-            transition: opacity .6s;
+
+
         }
     }
 
