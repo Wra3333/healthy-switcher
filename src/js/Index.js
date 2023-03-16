@@ -1,6 +1,5 @@
 AOS.init({
     duration: 1500,
-    disabled: "mobile"
 });
 
 (function slider(){
@@ -148,3 +147,5 @@ function burgerMenu(){
     }
 }
 burgerMenu()
+let button = document.querySelectorAll(".button")
+button.forEach( item => item.addEventListener("click", ()=> item.classList.toggle("button_active")))

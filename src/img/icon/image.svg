@@ -1,0 +1,25 @@
+<svg width="350" height="260" viewBox="0 0 350 260" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g clip-path="url(#clip0_4_286)">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M0 6.00001C0 2.6863 2.68629 0 6 0H344C347.314 0 350 2.68629 350 6V260H0V6.00001Z" fill="url(#pattern0)"/>
+<mask id="mask0_4_286" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="286" y="24" width="40" height="40">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M306 24C294.954 24 286 32.9543 286 44C286 55.0457 294.954 64 306 64C317.046 64 326 55.0457 326 44C326 32.9543 317.046 24 306 24Z" fill="white"/>
+</mask>
+<g mask="url(#mask0_4_286)">
+<rect opacity="0.3" x="286" y="24" width="40" height="40" fill="black"/>
+<mask id="mask1_4_286" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="298" y="37" width="16" height="13">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M307.6 40.8V37.6L313.2 43.2L307.6 48.8V45.52C303.6 45.52 300.8 46.8 298.8 49.6C299.6 45.6 302 41.6 307.6 40.8Z" fill="white"/>
+</mask>
+<g mask="url(#mask1_4_286)">
+<rect x="295.6" y="33.6" width="20.8" height="20.8" fill="white"/>
+</g>
+</g>
+</g>
+<defs>
+<pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+<use xlink:href="#image0_4_286" transform="matrix(0.00142857 0 0 0.00192308 0 -0.0384615)"/>
+</pattern>
+<clipPath id="clip0_4_286">
+<rect width="350" height="260" fill="white"/>
+</clipPath>
+</defs>
+</svg>

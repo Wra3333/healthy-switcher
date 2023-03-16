@@ -26,6 +26,7 @@
 
     &__item {
         border-radius: 6px;
+        position: relative;
         max-width: 350px;
         width: 100%;
         background: var(--color-background-secondary);
@@ -72,4 +73,20 @@
         margin-bottom: 20px;
     }
 
+    // .cards__button 
+
+    &__button {
+        text-align: center;
+        max-width: 100px;
+    }
+
+    // .cards__svg
+    
+    &__svg {
+        position: absolute;
+        visibility: hidden;
+        opacity: 0;
+        top: 15px;
+        left: 80%;
+    }    
 }

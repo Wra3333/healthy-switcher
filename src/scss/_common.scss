@@ -80,6 +80,11 @@
     &:active {
         transform: scale(.96);
     }
+
+    &_active{
+        background-color: var(--color-background-accent);
+        color: var(--color-font-initial);
+    }
 }
 
 .text {
@@ -113,11 +118,9 @@
         font-size: 100px;
         line-height: 1.5;
         letter-spacing: 0.1em;
-        color: #303030;
+        color: var(--color-font-secondary-light);
         text-transform: uppercase;
         user-select: none;
-        color: #303030;
-
         @media (max-width: $mobile) {
             font-size: 56px;
         }
@@ -131,7 +134,7 @@
         transform: translateX(-50%);
         width: 60px;
         height: 2px;
-        background-color: #34C759;
+        background-color: var(--color-font-accent);
     }
 }
 
