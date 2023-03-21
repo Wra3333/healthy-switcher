@@ -1,8 +1,11 @@
-@media (max-width: $mobile) {
-    .lock {
-        overflow: hidden;
+.lock {
+    padding-right: var(--scroll-bar, 0);
+    overflow: hidden;
 
-    }
+}
+
+.lock-padding {
+    padding-right: var(--scroll-bar, 0) !important;
 }
 
 .visually-hidden {
@@ -14,4 +17,9 @@
     overflow: hidden;
     border: 0;
     clip: rect(0 0 0 0);
+}
+
+.resize-animation-stopper *:not(.slider__line) {
+    transition: none !important;
+    animation: none !important;
 }

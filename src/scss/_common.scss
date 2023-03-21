@@ -8,7 +8,6 @@
     letter-spacing: .1em;
     text-transform: uppercase;
     color: #33c759;
-
 }
 
 .burger {
@@ -29,7 +28,7 @@
         left: 4px;
         border-radius: 10px;
         transform: translateY(-50%);
-    transition: transform .3s;
+        transition: transform .3s;
 
     }
 
@@ -42,7 +41,7 @@
         background: var(--color-background-accent);
         left: 9px;
         border-radius: 10px;
-    transition: transform .3s;
+        transition: transform .3s;
 
     }
 
@@ -57,21 +56,26 @@
     &:focus-visible {
         box-shadow: 0 0 4px 1px var(--color-background-accent);
     }
-}
-.burger.burger_active {
-    
-    .burger__line{
-        opacity: 0;
+
+    &.burger_active {
+        
+        .burger__line {
+            opacity: 0;
+        }
+
+        &::after,
+        &::before {
+            top: 50%;
+        }
+
+        &::after {
+            transform: rotate(45deg);
+        }
+
+        &::before {
+            transform: rotate(-45deg);
+        }
     }
-    &::after,&::before{
-        top: 50%;
-    }
-   &::after{
-    transform: rotate(45deg);
-   }
-   &::before{
-    transform: rotate(-45deg);
-   }
 }
 
 .button {
@@ -87,6 +91,8 @@
     transition: color .3s, background-color .3s, transform .3s;
     padding: 10px;
     white-space: nowrap;
+    user-select: none;
+    cursor: pointer;
 
     &:hover {
         background-color: var(--color-background-accent);
@@ -98,7 +104,7 @@
         transform: scale(.96);
     }
 
-    &_active{
+    &_active {
         background-color: var(--color-background-accent);
         color: var(--color-font-initial);
     }
@@ -138,6 +144,7 @@
         color: var(--color-font-secondary-light);
         text-transform: uppercase;
         user-select: none;
+
         @media (max-width: $mobile) {
             font-size: 56px;
         }

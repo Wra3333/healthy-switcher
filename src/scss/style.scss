@@ -31,7 +31,7 @@ $mobileSmall: 479.98px;
     --h3-font-size: #{rem(32)};
     --h3-font-weight: 400;
     --h3-line-height: #{line-h(30px,32px)};
-
+    
     // h4
     --h4-font-size: #{rem(18)};
     --h4-font-weight: 400;
@@ -135,6 +135,9 @@ $mobileSmall: 479.98px;
     //slider
     --slider-width: 734px;
     --slide-width: 50%;
+
+    // scrollBar
+    --scroll-bar: 0;
 
     //media css
     @media (max-width: $tablet) {

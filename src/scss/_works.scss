@@ -59,19 +59,19 @@
             transition: width .6s;
         }
 
-    }
-
-    &__item:hover &__subtitle::after {
-        width: 100%;
-        background-color: var(--color-background-initial);
+        .works__item:hover &::after{
+            width: 100%;
+            background-color: var(--color-background-initial);
+        }
     }
 
     // .works__text
 
-    &__text {}
+    &__text {
 
-    &__item:hover &__text {
-        color: var(--color-font-initial);
+        .works__item:hover &{
+            color: var(--color-font-initial);
+        }
     }
 }
 
