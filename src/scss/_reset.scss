@@ -10,10 +10,8 @@
     box-sizing: border-box;
 }
 :focus,:active {
-    outline: none;
 }
 a:focus,a:active {
-    outline: none;
 }
 nav,footer,header,aside {
     display: block;
@@ -38,8 +36,11 @@ input::-ms-clear {
     display: none;
 }
 button {
+    font-size: inherit;
+    font-weight: inherit;
+    font-family: inherit;
+    color: inherit;
     display: block;
-    cursor: pointer;
 }
 button::-moz-focus-inner {
     padding: 0;
