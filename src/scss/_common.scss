@@ -58,7 +58,7 @@
     }
 
     &.burger_active {
-        
+
         .burger__line {
             opacity: 0;
         }
@@ -91,13 +91,15 @@
     transition: color .3s, background-color .3s, transform .3s;
     padding: 10px;
     white-space: nowrap;
-    user-select: none;
+    user-select: text;
     cursor: pointer;
 
-    &:hover {
-        background-color: var(--color-background-accent);
-        color: var(--color-font-initial);
-        border-color: transparent;
+    @media (hover: hover) {
+        &:hover {
+            background-color: var(--color-background-accent);
+            color: var(--color-font-initial);
+            border-color: transparent;
+        }
     }
 
     &:active {
@@ -201,6 +203,7 @@
         color: var(--color-font-secondary-light);
     }
 }
+
 .rating {
 
     // .rating__items
@@ -209,7 +212,7 @@
         position: relative;
         width: 100px;
         height: 20px;
-        background: url("../img/rating/star-off.svg") 0 / 20px 100px repeat-x;
+        background: url("../img/rating/star-off.svg") 0% / 20px 100px repeat-x;
     }
 
     // .rating__star
@@ -220,34 +223,42 @@
         left: 0;
         height: 20px;
         appearance: none;
-        &:nth-child(1){
+
+        &:nth-child(1) {
             width: 20px;
             z-index: 5;
         }
-        &:nth-child(2){
+
+        &:nth-child(2) {
             width: 40px;
             z-index: 4;
         }
-        &:nth-child(3){
+
+        &:nth-child(3) {
             width: 60px;
             z-index: 3;
         }
-        &:nth-child(4){
+
+        &:nth-child(4) {
             width: 80px;
             z-index: 2;
         }
-        &:nth-child(5){
+
+        &:nth-child(5) {
             width: 100px;
             z-index: 1;
         }
-        &:checked{
-            background: url("../img/rating/star-on.svg") 0 / 20px 100px;
+
+        &:checked {
+            background: url("../img/rating/star-on.svg") 0% / 20px 100px repeat-x;
         }
-        &:hover{
-            background: url("../img/rating/star-on.svg") 0 / 20px 100px;
+
+        &:hover~& {
+            background: url("../img/rating/star-off.svg") 0% / 20px 100px repeat-x;
         }
-        &:hover ~ &{
-            background: url("../img/rating/star-off.svg") 0 / 20px 100px;
+
+        &:hover {
+            background: url("../img/rating/star-on.svg") 0% / 20px 100px repeat-x;
         }
     }
 }
