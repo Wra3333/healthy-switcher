@@ -143,7 +143,7 @@
         font-size: 100px;
         line-height: 1.5;
         letter-spacing: 0.1em;
-        color: var(--color-font-secondary-light);
+        color: #303030;
         text-transform: uppercase;
         user-select: none;
 
@@ -212,7 +212,7 @@
         position: relative;
         width: 100px;
         height: 20px;
-        background: url("../img/rating/star-off.svg") 0% / 20px 100px repeat-x;
+        background: url("../img/rating/star-off.svg") 0% / 20px auto repeat-x;
     }
 
     // .rating__star
@@ -221,6 +221,9 @@
         position: absolute;
         top: 0;
         left: 0;
+        font-size: 0px;
+        margin: 0;
+        padding: 0;
         height: 20px;
         appearance: none;
 
@@ -250,15 +253,16 @@
         }
 
         &:checked {
-            background: url("../img/rating/star-on.svg") 0% / 20px 100px repeat-x;
+            background: url("../img/rating/star-on.svg") 0% / 20px 20px repeat-x;
         }
 
-        &:hover~& {
-            background: url("../img/rating/star-off.svg") 0% / 20px 100px repeat-x;
+        &:hover ~ & {
+            z-index:1;
+            background: url("../img/rating/star-off.svg") 0% / 20px 0px repeat-x;
         }
 
         &:hover {
-            background: url("../img/rating/star-on.svg") 0% / 20px 100px repeat-x;
+            background: url("../img/rating/star-on.svg") 0% / 20px 18px repeat-x;
         }
     }
 }
