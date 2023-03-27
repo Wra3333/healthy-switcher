@@ -56,7 +56,7 @@ function burgerMenu() {
         }
     }
 }
-export function slider() {
+function slider() {
     let slider = document.querySelector(".slider"),
         sliderLine = document.querySelector(".slider__line"),
         sliderItem = [...document.querySelectorAll(".slider__item")],
