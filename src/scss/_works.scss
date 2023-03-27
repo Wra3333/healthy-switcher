@@ -35,11 +35,10 @@
         background-color: var(--color-background-secondary);
         transition: background-color .3s, color .3s;
 
-        @media (hover: hover) and (pointer: fine){
+        @media (hover: hover){
             &:hover {
                 background-color: var(--color-background-accent);
                 color: var(--color-font-initial);
-
             }
         }
     }
