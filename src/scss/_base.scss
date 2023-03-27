@@ -18,7 +18,7 @@
     clip: rect(0 0 0 0);
 }
 
-.resize-animation-stopper *:not(.slider__line) {
+.resize-animation-stopper *:not(.slider__line){
     transition: none !important;
     animation: none !important;
 }

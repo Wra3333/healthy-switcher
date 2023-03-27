@@ -80,6 +80,14 @@
         max-width: 100px;
     }
 
+    // .cards__stats
+
+    &__stats {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
     // .cards__svg
     
     &__svg {

@@ -25,7 +25,7 @@ export function burgerMenu() {
         SCROLL_BAR = window.innerWidth - document.documentElement.clientWidth;
         document.querySelector(":root").style.setProperty("--scroll-bar", SCROLL_BAR + "px")
     }
-    function toggleMenu() {
+    function toggleMenu({target}) {
         if(unloack){
             burgerBtn.classList.toggle("burger_active")
             menu.classList.toggle("header__nav_active")
