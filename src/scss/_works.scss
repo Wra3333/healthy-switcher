@@ -34,13 +34,14 @@
         padding: 24px 24px 42px 24px;
         background-color: var(--color-background-secondary);
         transition: background-color .3s, color .3s;
-        @media (hover: hover) {
-        &:hover {
-            background-color: var(--color-background-accent);
-            color: var(--color-font-initial);
 
+        @media (hover: hover) and (pointer: fine){
+            &:hover {
+                background-color: var(--color-background-accent);
+                color: var(--color-font-initial);
+
+            }
         }
-    }
     }
 
     // .works__subtitle
@@ -59,7 +60,7 @@
             transition: width .6s;
         }
 
-        .works__item:hover &::after{
+        .works__item:hover &::after {
             width: 100%;
             background-color: var(--color-background-initial);
         }
@@ -69,7 +70,7 @@
 
     &__text {
 
-        .works__item:hover &{
+        .works__item:hover & {
             color: var(--color-font-initial);
         }
     }
