@@ -156,7 +156,7 @@ button.forEach(item => item.addEventListener("click", () => item.classList.toggl
 let drop = document.querySelectorAll(".header__button"),
     dropdown = document.querySelector(".header__dropdown");
     
-    let media = window.matchMedia("(min-width: 991.98px)");
+let media = window.matchMedia("(min-width: 991.98px)");
 
 drop.forEach(item => item.addEventListener("click", () => {
         dropdown.classList.toggle("header__dropdown_active")

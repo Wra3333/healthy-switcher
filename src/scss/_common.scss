@@ -209,6 +209,7 @@
         position: relative;
         width: 100px;
         height: 20px;
+        background: url("../img/rating/star-off.svg") 0 / 20px 100px repeat-x;
     }
 
     // .rating__star
@@ -219,7 +220,6 @@
         left: 0;
         height: 20px;
         appearance: none;
-        background-color: #33c759;
         &:nth-child(1){
             width: 20px;
             z-index: 5;
@@ -241,8 +241,13 @@
             z-index: 1;
         }
         &:checked{
-            background-image: url();
+            background: url("../img/rating/star-on.svg") 0 / 20px 100px;
+        }
+        &:hover{
+            background: url("../img/rating/star-on.svg") 0 / 20px 100px;
+        }
+        &:hover ~ &{
+            background: url("../img/rating/star-off.svg") 0 / 20px 100px;
         }
     }
-
 }
