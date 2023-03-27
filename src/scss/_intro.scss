@@ -63,13 +63,13 @@
         min-width: 220px;
         min-height: 72px;
         margin: 0 auto 80px auto;
-
+        @media (hover: hover) {
         &:hover {
             color: var(--color-font-secondary-light);
             background-color: var(--color-background-secondary);
             border-color: #303030;
         }
-
+    }
         @media (max-width: $mobile) {
             margin: auto auto 40px auto;
 

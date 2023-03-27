@@ -34,13 +34,13 @@
         padding: 24px 24px 42px 24px;
         background-color: var(--color-background-secondary);
         transition: background-color .3s, color .3s;
-
+        @media (hover: hover) {
         &:hover {
             background-color: var(--color-background-accent);
             color: var(--color-font-initial);
 
         }
-
+    }
     }
 
     // .works__subtitle
