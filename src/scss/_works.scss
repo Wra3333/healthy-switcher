@@ -68,10 +68,11 @@
     // .works__text
 
     &__text {
-
+    @media (hover: hover){
         .works__item:hover & {
             color: var(--color-font-initial);
         }
+    }
     }
 }
 
