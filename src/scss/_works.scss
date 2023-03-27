@@ -35,7 +35,7 @@
         background-color: var(--color-background-secondary);
         transition: background-color .3s, color .3s;
 
-        @media (hover: hover) and (pointer: fine){
+        @media (hover: hover) and (pointer: fine) {
             &:hover {
                 background-color: var(--color-background-accent);
                 color: var(--color-font-initial);
@@ -59,20 +59,22 @@
             transition: width .6s;
         }
 
-        .works__item:hover &::after {
-            width: 100%;
-            background-color: var(--color-background-initial);
+        @media (hover: hover) and (pointer: fine) {
+            .works__item:hover &::after {
+                width: 100%;
+                background-color: var(--color-background-initial);
+            }
         }
     }
 
     // .works__text
 
     &__text {
-    @media (hover: hover) and (pointer: fine){
-        .works__item:hover & {
-            color: var(--color-font-initial);
+        @media (hover: hover) and (pointer: fine) {
+            .works__item:hover & {
+                color: var(--color-font-initial);
+            }
         }
-    }
     }
 }
 
