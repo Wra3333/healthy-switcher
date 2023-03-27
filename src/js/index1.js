@@ -162,3 +162,4 @@ drop.forEach(item => item.addEventListener("click", () => {
         dropdown.classList.toggle("header__dropdown_active")
 }))
 media.addEventListener("change", () => dropdown.classList.remove("header__dropdown_active")) 
+AOS.init({duration: 1500});
