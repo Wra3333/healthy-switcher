@@ -13,7 +13,7 @@
 .burger {
     background-color: #37131300;
     position: relative;
-    width: 40px;
+    min-width: 40px;
     height: 40px;
     border: var(--color-background-accent) solid 1px;
     transition: transform .3s;
