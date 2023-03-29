@@ -210,12 +210,11 @@
 
     &__items {
         position: relative;
-        width: 100px;
+        width: 99px;
         height: 20px;
         background: url("../img/rating/star-off.svg");
         background-size: 20px 20px;
         background-repeat: repeat-x;
-        overflow: hidden;
     }
 
     // .rating__star
@@ -230,9 +229,8 @@
         -webkit-appearance: none;
         -moz-appearance: none;
         appearance: none;
-        background-size: 20px 20px;
+        background-size: 20px 23px;
         background-position: 0%;
-        overflow: hidden;
         background-repeat: repeat-x;
 
         &:nth-child(1) {
@@ -256,7 +254,7 @@
         }
 
         &:nth-child(5) {
-            width: 100px;
+            width: 99px;
             z-index: 1;
         }
 
@@ -265,7 +263,7 @@
         }
 
         &:hover ~ & {
-            background-image: url("../img/rating/star-off.svg");
+            background-image: none;
         }
     }
 }
