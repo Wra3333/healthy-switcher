@@ -212,7 +212,10 @@
         position: relative;
         width: 100px;
         height: 20px;
-        background: url("../img/rating/star-off.svg") 100% / 20px 20px repeat-x;
+        background: url("../img/rating/star-off.svg");
+        background-size: 20px 20px;
+        background-repeat: repeat-x;
+        overflow: hidden;
     }
 
     // .rating__star
@@ -221,11 +224,16 @@
         position: absolute;
         top: 0;
         left: 0;
-        font-size: 0px;
         margin: 0;
-        padding: 0;
         height: 20px;
+        font-size: inherit;
+        -webkit-appearance: none;
+        -moz-appearance: none;
         appearance: none;
+        background-size: 20px 20px;
+        background-position: 0%;
+        overflow: hidden;
+        background-repeat: repeat-x;
 
         &:nth-child(1) {
             width: 20px;
@@ -252,16 +260,12 @@
             z-index: 1;
         }
 
-        &:checked {
-            background: url("../img/rating/star-on.svg") 100% / 20px 20px repeat-x;
+        &:checked, &:hover  {
+            background-image: url("../img/rating/star-on.svg");
         }
 
         &:hover ~ & {
-            background: url("../img/rating/star-off.svg") 100% / 20px 20px repeat-x;
-        }
-
-        &:hover {
-            background: url("../img/rating/star-on.svg") 100% / 20px 20px repeat-x;
+            background-image: url("../img/rating/star-off.svg");
         }
     }
 }
