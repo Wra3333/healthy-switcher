@@ -9,10 +9,6 @@
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
-:focus,:active {
-}
-a:focus,a:active {
-}
 nav,footer,header,aside {
     display: block;
 }
@@ -20,7 +16,6 @@ nav,footer,header,aside {
 html,body {
     min-height: 100%;
     width: 100%;
-    min-width:$min-width;
     background-color: #1A1A1A;
     font-family: var(--font-family-base);
     color: var(--color-font-default);
